@@ -12,3 +12,8 @@ curl -X GET -H "Content-Type: application/json" \
   | jq '.regions[] | (.name + ", " +.slug)'
 ```
 
+## Append to a file using sudo
+
+```bash
+echo "188.166.180.22  dokku.me" | sudo tee -a /etc/hosts
+```
